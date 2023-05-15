@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognizer Via Webcam Dengan Javascript</title>
+
+    <script src="./public/js/face-api.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        video {
+            align-content: center;
+            position: absolute;
+            z-index: 1;
+        }
+
+        canvas {
+            align-items: center;
+            position: relative;
+            z-index: 20;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+    <h1>Face Recognizer Via Webcam Dengan Javascript</h1>
+    <div>
+        <video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay muted playsinline></video>
+        <canvas id="overlay">
+    </div>
+</center>
+    <script src="./public/js/script_webcam.js"></script>
+</body>
+
+</html>
